@@ -1,0 +1,52 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --main-color: #575a91;
+}
+
+.head{
+    background-color: var(--main-color);
+}
+
+input::placeholder{
+    color: #b6b6b6 !important;
+}
+.form-control:focus{
+    border-color: white;
+    box-shadow:none;
+    background-color: #e2e3e5 !important;
+    color: #616161 !important;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+.recipes .card .btn{
+    background-color: var(--main-color);
+    color: white;
+}
+.recipe-details img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.recipe-details i{
+    width: 30px;
+    height: 30px; 
+    font-size: 20px;
+    color: var(--main-color);
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.recipe-details i:hover{
+    color: white;
+    background-color: var(--main-color);
+}
